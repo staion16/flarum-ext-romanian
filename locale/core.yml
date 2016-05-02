@@ -1,0 +1,494 @@
+core:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the placeholder Add Extension modal dialog.
+    add_extension:
+      developer_text: "Dacă sunteți dezvolttor, puteți <a>să citiți documentația</a> și să incercați să creați propriile extensii."
+      install_text: "Între timp, puteți găsi extensii pe <a>Flarum.org</a> și le puteți instala prin Composer."
+      temporary_text: "Într-o zi, într-un viitor foarte îndepărtat, acest dialog vă va permite să adăugați o extensie forumului d-voastră cu ușurință. ¡Creăm plataforma chiar în acest moment!"
+
+    # These translations are used in the Appearance page.
+    appearance:
+      colored_header_label: Antent colorat
+      colors_heading: Culori
+      colors_text: "Alegeți două culori pentru a decora forumul. Prima va fi folosită pentru a evidenția iar a doua pentru a decora elementele de fundal."
+      custom_styles_heading: Stiluri personalizate
+      custom_styles_text: "Personalizați aspectul forumului d-voastră adăugând propriul cod LESS/CSS, care se va aplica peste stilurile implicite ale Flarum."
+      dark_mode_label: Mod întunecat
+      edit_css_button: Editare stiluri personalizate
+      enter_hex_message: "Vă rugăm, introduceți un cod hexadecimal de culoare."
+      submit_button: => core.ref.save_changes
+
+    # These translations are used in the Basics page.
+    basics:
+      all_discussions_label: => core.ref.all_discussions
+      default_language_heading: Limbă implicită
+      forum_description_heading: Descrierea forumului
+      forum_description_text: Introduceți o frază sau două care să descrie comunitatea d-voastră. Acestea vor apărea într-o meta-etichetă și se vor afișa în motoarele de căutare.
+      forum_title_heading: Títlul forumului
+      home_page_heading: Pagină de start
+      home_page_text: "Alegeți care este prima pagină pe care utilizatorii o vor privi când vor intra pe forum." #TODO: Custom
+      saved_message: Schimbările au fost salvate.
+      submit_button: => core.ref.save_changes
+      welcome_banner_heading: Mesaj de bun-venit
+      welcome_banner_text: Introduceți textul care va apărea în lista de discuții. Utilizați-l pentru a ura bun venit invitaților acestui forum.
+
+    # These translations are used in the Dashboard page.
+    dashboard:
+      beta_warning_text: "Acest <strong> software beta </ strong> este oferit în primul rând pentru a ne ajuta testându-ș și îmbunătățindu-l; nu ar trebui să fie utilizat în producție."
+      contributing_text: "Vreți să contribuiți la depistarea problemelor? Consultați <a>documentația pentru contribuitori</a> (în engleză)."
+      extension_text: "Interesat în dezvoltarea de extensii ? Consultați <a>documentația extensiilor</a> (în engleză)."
+      features_text: "Aveți vre-o idee pentru a îmbunătăți o caracteristică? Împărtășiți-o sub eticheta <a>« Features »</a> (în engleză)."
+      support_text: "Ați găsit un bug? Porniți o discuție sub eticheta <a>« Support »</a> (în engleză)."
+      troubleshooting_text: "Aveți dificultăți? Consultați <a>documentația pentru rezolvări de probleme</a> (în engleză)."
+      version_text: "Vă mulțumim că încercați Flarum! Utilizați versiunea {version}."
+      welcome_text: "Bine ați venit la Flarum beta!"
+
+    # These translations are used in the Edit Custom CSS modal dialog.
+    edit_css:
+      customize_text: Personalizați aspectul forumului prin adăugarea de cod propriu LESS/CSS pentru a fi aplicat pe partea de sus a <a>stilurilor implicite</a>.
+      submit_button: => core.ref.okay
+      title: Editare stiluri personalizate
+
+    # These translations are used in the Edit Group modal dialog.
+    edit_group:
+      color_label: Culoare
+      delete_button: Ștergere grup
+      delete_confirmation: "Sunteți sigur că doriți să ștergeți acest grup? Membrii grupului nu vor fi șterși."
+      icon_label: Iconiță
+      icon_text: "Introduceți numele clasei oricărui iconițe <a>Font Awesome</a> <em>fără</em> prefixul <code>fa-</code>."
+      name_label: Nume
+      plural_placeholder: Denumire la plural (de exemplu, « Moderatori »)
+      singular_placeholder: Denumire la singular (de exemplu « Moderator »)
+      submit_button: => core.ref.okay
+      title: Creare grup
+
+    # These translations are used in the Extensions page.
+    extensions:
+      add_button: Adăugare extensie
+      disable_button: Dezactivare
+      enable_button: Activare
+      settings_button: => core.ref.settings
+      uninstall_button: Dezinstalare
+
+    # These translations are used in the session dropdown menu.
+    header:
+      log_out_button: => core.ref.log_out
+
+    # These translations are used in the modal dialog displayed when loading extensions.
+    loading:
+      title: Vă rugăm, aștepați…
+
+    # These translations are used in the navigation bar.
+    nav:
+      appearance_button: Aspect
+      appearance_text: "Personalizați culorile, logotipurile și alte aspecte al forumului d-voastră."
+      basics_button: Setări de bază
+      basics_text: "Stabiliți titlul, limba folosită și alte opțiuni de bază."
+      dashboard_button: Tablou de bord
+      dashboard_text: Forumul d-voastră dintr-o privire.
+      extensions_button: Extensii
+      extensions_text: Adăugați funcționalități extra forumului și însușiți-vă-l.
+      permissions_button: Permisiuni
+      permissions_text: Configurați acțiunile autorizate.
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      allow_renaming_label: Permiteți redenumirea
+      allow_post_editing_label: Permiteți editarea postărilor
+      create_heading: Creare
+      delete_discussions_forever_label: Ștergerea definitivă a discuțiilor
+      delete_discussions_label: Ștergerea discuțiilor
+      delete_posts_forever_label: Ștergerea definitivă a mesajelor
+      edit_and_delete_posts_label: Editarea și ștergerea mesajelor
+      global_heading: Global
+      moderate_heading: Moderare
+      new_group_button: Grup nou
+      participate_heading: Participare
+      read_heading: Citire
+      rename_discussions_label: Redenumirea discuțiilor
+      reply_to_discussions_label: Răspuns la discuții
+      sign_up_label: Înscriere
+      start_discussions_label: Înițierea unei discuții
+      view_discussions_label: Vizualizarea discuțiilor
+
+    # These translations are used in the dropdown menus on the Permissions page.
+    permissions_controls:
+      allow_indefinitely_button: Pe o durată indefinită
+      allow_some_minutes_button: "Pentru {count} minut|Pentru {count} minute"
+      allow_ten_minutes_button: Pentru 10 minute
+      allow_until_reply_button: Până la următorul răspuns
+      everyone_button: Oricine
+      members_button: => core.group.members
+      signup_closed_button: Închis
+      signup_open_button: Deschis
+
+    # These translations are used in the Settings modal dialog.
+    settings:
+      submit_button: => core.ref.okay
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used in the Change Email modal dialog.
+    change_email:
+      confirmation_message: => core.ref.confirmation_email_sent
+      confirm_password_label: => core.ref.confirm_password
+      dismiss_button: => core.ref.okay
+      incorrect_password_message: Parola introdusă este incorectă.
+      submit_button: => core.ref.okay
+      title: => core.ref.change_email
+
+    # These translations are used in the Change Password modal dialog.
+    change_password:
+      send_button: Trimiteți parolă resetată prin e-mail
+      text: "Faceți clic pe butonul de mai jos și verificați e-mail-ul pentru un link de resetare a parolei."
+      title: => core.ref.change_password
+
+    # These translations are used by the composer controls.
+    composer:
+      close_tooltip: Închidere
+      exit_full_screen_tooltip: Închideți ecranul complet
+      full_screen_tooltip: Ecran complet
+      minimize_tooltip: Minimizare
+
+    # These translations are used by the composer when starting a discussion.
+    composer_discussion:
+      body_placeholder: Scrieți o postare…
+      discard_confirmation: "Nu ați publicat discuția. Vreți să o abandonați?"
+      submit_button: Publicare discuție
+      title: => core.ref.start_a_discussion
+      title_placeholder: Titlul discuției
+
+    # These translations are used by the composer when editing a post.
+    composer_edit:
+      discard_confirmation: "Nu ați salvat schimbările.  Vreți să le abandonați?"
+      post_link: "Message #{number} de {discussion}"
+      submit_button: => core.ref.okay
+
+    # These translations are used by the composer when replying to a discussion.
+    composer_reply:
+      body_placeholder: => core.ref.write_a_reply
+      discard_confirmation: "Nu ați terminat de publicat răspunsul. Vreți să renunțați la el?"
+      posted_message: Răspuns publicat.
+      submit_button: Publicare răspuns
+      view_button: Vizualizare
+
+    # These translations are used by the discussion control buttons.
+    discussion_controls:
+      cannot_reply_button: Nu puteți răspunde
+      cannot_reply_text: Nu aveți permisiunea de a răspune acestei discuții.
+      delete_button: => core.ref.delete
+      delete_confirmation: "Sigur vreți să ștergeți această discuție?"
+      delete_forever_button: => core.ref.delete_forever
+      log_in_to_reply_button: Conectați-vă pentru a răspunde
+      rename_button: Redenumire
+      rename_text: "Introduceți un nou titlu pentru această discuție:"
+      reply_button: => core.ref.reply
+      restore_button: => core.ref.restore
+
+    # These translations are used in the discussion list.
+    discussion_list:
+      empty_text: Se pare că nu sunt discuții aici.
+      load_more_button: => core.ref.load_more
+      mark_as_read_tooltip: Marcați ca citit
+      replied_text: "{username} a răspuns {ago}"
+      started_text: "{username} a publicat {ago}"
+
+    # These translations are used in the Edit User modal dialog (admin function).
+    edit_user:
+      email_label: => core.ref.email
+      password_label: => core.ref.password
+      submit_button: => core.ref.okay
+      username_label: => core.ref.username
+
+    # These translations are used in the Forgot Password modal dialog.
+    forgot_password:
+      dismiss_button: => core.ref.okay
+      email_placeholder: => core.ref.email
+      email_sent_message: "V-am trimis un mesaj cu o legătură la care veți reseta parola. Verificați și dosarul de Spam dacă nu-l primiți în următoarele minute."
+      not_found_message: Nu există niciun utilizator înregistrat cu această adresă de e-mail.
+      submit_button: Recuperare parolă
+      text: Introduceți adresa de e-mail și vă vom trimite o legătură la care veți putea reseta parola.
+      title: Parolă uitată
+
+    # These translations are used in the header and session dropdown menu.
+    header:
+      admin_button: Administrare
+      log_in_link: => core.ref.log_in
+      log_out_button: => core.ref.log_out
+      profile_button: Profil
+      search_placeholder: Căutați în postări
+      settings_button: => core.ref.settings
+      sign_up_link: => core.ref.sign_up
+
+    # These translations are used on the index page, peripheral to the discussion list.
+    index:
+      all_discussions_link: => core.ref.all_discussions
+      cannot_start_discussion_button: Nu se poate iniția o discuție
+      mark_all_as_read_confirmation: "Sigur vreți ca toate discuțiile să fie marcate ca citite?"
+      mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      refresh_tooltip: Împrospătare
+      start_discussion_button: => core.ref.start_a_discussion
+
+    # These translations are used by the sorting control above the discussion list.
+    index_sort:
+      latest_button: Ultimele
+      newest_button: Cele mai noi
+      oldest_button: Cele mai vechi
+      relevance_button: Relevanță
+      top_button: Popularitate
+
+    # These translations are used in the Log In modal dialog.
+    log_in:
+      forgot_password_link: "Parolă uitată ?"
+      invalid_login_message: Date de acces incorecte.
+      password_placeholder: => core.ref.password
+      sign_up_text: "Nu aveți cont? <a>Înscriere</a>"
+      submit_button: => core.ref.log_in
+      title: => core.ref.log_in
+      username_or_email_placeholder: Nume de utilizator sau adresă de e-mail
+
+    # These translations are used by the Notifications dropdown, a.k.a. "the bell".
+    notifications:
+      discussion_renamed_text: "{username} a schimbat titlul discuției"
+      empty_text: Nicio notificare
+      mark_all_as_read_tooltip: => core.ref.mark_all_as_read
+      title: => core.ref.notifications
+      tooltip: => core.ref.notifications
+
+    # These translations are used by tooltips displayed for individual posts.
+    post:
+      edited_tooltip: "{username} a modificat {ago}"
+      number_tooltip: "Mesaj #{number}"
+
+    # These translations are used by the post control buttons.
+    post_controls:
+      delete_button: => core.ref.delete
+      delete_forever_button: => core.ref.delete_forever
+      edit_button: => core.ref.edit
+      restore_button: => core.ref.restore
+
+    # These translations are used in the scrubber to the right of the post stream.
+    post_scrubber:
+      now_link: Acum
+      original_post_link: Postare originală
+      unread_text: "{count} necitit|{count} necitite"
+      viewing_text: "{index} din {count} postare|{index} din {count} postări"
+
+    # These translations are displayed between posts in the post stream.
+    post_stream:
+      discussion_renamed_old_tooltip: "Titlul vechi era: « {old} »"
+      discussion_renamed_text: "{username} a schimbat titlul în {new}."
+      load_more_button: => core.ref.load_more
+      reply_placeholder: => core.ref.write_a_reply
+      time_lapsed_text: "{period} mai târziu"
+
+    # These translations are used by the search results dropdown list.
+    search:
+      all_discussions_button: "Căutați «{query}» în toate discuțiile"
+      discussions_heading: => core.ref.discussions
+      users_heading: Utilizatori
+
+    # These translations are used in the Settings page.
+    settings:
+      account_heading: Cont
+      change_email_button: => core.ref.change_email
+      change_password_button: => core.ref.change_password
+      notifications_heading: => core.ref.notifications
+      notify_by_email_heading: core.ref.email
+      notify_by_web_heading: Web
+      notify_discussion_renamed_label: Cineva redenumește o discuție inițiată de mine
+      privacy_disclose_online_label: Permieți altora să vadă când sunt conectat
+      privacy_heading: Intimitate
+      title: => core.ref.settings
+
+    # These translations are used in the Sign Up modal dialog.
+    sign_up:
+      email_placeholder: => core.ref.email
+      dismiss_button: => core.ref.okay
+      log_in_text: "Aveți cont deja? <a>Conectare</a>"
+      password_placeholder: => core.ref.password
+      submit_button: => core.ref.sign_up
+      title: => core.ref.sign_up
+      username_placeholder: => core.ref.username
+      welcome_text: "Bine ați venit, {username}!"
+
+    # These translations are used in the user profile page and profile popup.
+    user:
+      avatar_remove_button: Ștergere
+      avatar_upload_button: Încărcare
+      avatar_upload_tooltip: Încărcați o noua imagine de profil
+      bio_placeholder: Scrieți ceva despre d-voastră
+      discussions_link: => core.ref.discussions
+      in_discussion_text: "În {discussion}"
+      joined_date_text: "Inregistrat {ago}"
+      online_text: Conectat
+      posts_load_more_button: => core.ref.load_more
+      posts_link: Mesaje
+      settings_link: => core.ref.settings
+
+    # These translations are found on the user profile page (admin function).
+    user_controls:
+      button: Controale
+      delete_button: => core.ref.delete
+      delete_confirmation: "Sigur vreți să ștergeți acest utilizator? Toate mesajele vor fi șterse de asemenea."
+      edit_button: => core.ref.edit
+
+    # These translations are used in the alert that is shown when a new user has not confirmed their email address.
+    user_email_confirmation:
+      alert_message: => core.ref.confirmation_email_sent
+      resend_button: Trimiteți din nou mesajul de confirmare
+      sent_message: Trimis
+
+  # Translations in this namespace are used by the forum and admin interfaces.
+  lib:
+
+    # These translations are displayed as tooltips for discussion badges.
+    badge:
+      hidden_tooltip: Ascuns
+
+    # These translations are used to modify usernames.
+    username:
+      deleted_text: "[șters]"
+
+    # These translations are displayed as error messages.
+    error:
+      generic_message: "Hopa! Ceva nu e în regulă. Vă rugăm, încărcați pagina din nou (F5)."
+      not_found_message: Resursa solicitată nu a fost găsită.
+      permission_denied_message: Nu aveți permisiunea de a face acest lucru.
+      rate_limit_exceeded_message: Faceți totul prea rapid. Așteptați câteva secunde, vă rugăm.
+
+    # These translations are used as suffixes when abbreviating numbers.
+    number_suffix:
+      kilo_text: K
+      mega_text: M
+
+    # These translations are used to punctuate a series of items.
+    series:
+      glue_text: ", "
+      three_text: "{first}, {second} și {third}"
+      two_text: "{first} și {second}"
+
+  # Translations in this namespace are used in views other than Flarum's normal JS client.
+  views:
+
+    # Translations in this namespace are displayed by the basic HTML content loader.
+    content:
+      javascript_disabled_message: Acest site se vede cel mai bine într-un navigator modern cu JavaScript activat.
+      load_error_message: A avut loc o eroare în timp ce se încerca încărcarea completă a acestui site.
+      loading_text: Se încarcă…
+
+    # Translations in this namespace are displayed in the basic HTML discussion view.
+    discussion:
+      next_page_button: => core.ref.next_page
+      previous_page_button: Pagina anterioară
+
+    # Translations in this namespace are displayed by the basic HTML discussion index.
+    index:
+      all_discussions_heading: => core.ref.all_discussions
+      next_page_button: => core.ref.next_page
+
+    # Translations in this namespace are displayed by the Reset Password interface.
+    reset:
+      confirm_password_label: => core.ref.confirm_password
+      password_label: => core.ref.password
+      submit_button: Resetare parolă
+      title: Reinitializați parola de access
+
+  # Translations in this namespace are used in emails sent by the forum.
+  email:
+
+    # These translations are used in emails sent when users register new accounts.
+    activate_account:
+      body: |
+        Bună, {username} !
+
+        Cineva (sperăm că d-voastră!) s-a înscris pe {forum} cu această adresă de e-mail.
+
+        Dacă ați fost d-voastră, accesați următoarea legătură pentru activarea contului:
+        {url}
+
+        Dacă nu, vă rugăm să ignorați acest e-mail.
+      subject: Activare cont
+
+    # These translations are used in emails sent when users change their email address.
+    confirm_email:
+      body: |
+        Bună, {username} !
+
+        Cineva (sperăm că d-voastră!) a schimbat adresa de e-mail asociată contului de pe {forum} cu aceast.
+
+        Dacă ați fost d-voastră, accesați următoarea legătură pentru confirmarea acesteia:
+        {url}
+
+        Dacă nu, vă rugăm să ignorați acest e-mail.
+      subject: Modificare adresă de e-mail
+
+    # These translations are used in emails sent when users ask to reset their passwords.
+    reset_password:
+      body: |
+        Bună, {username} !
+
+        Cineva (sperăm că d-voastră!) a solicitat resetarea parolei asociate contului de pe {forum}.
+
+        Dacă ați fost d-voastră, accesați următoarea legătură pentru resetarea parolei:
+        {url}
+
+        Dacă nu, vă rugăm să ignorați acest e-mail și nimic nu se va schimba.
+      subject: Resetare parolă
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    all_discussions: Toate discuțiile
+    change_email: Modificare adresă e-mail
+    change_password: Modificare parolă
+    confirm_password: Confirmare parolă
+    confirmation_email_sent: "Am trimis un mesaj de confirmare la {email}. Dacă nu ajunge în curând, vă rugăm să verificați dosarul de Spam."
+    delete: Ștergere
+    delete_forever: Ștergere definitivă
+    discussions: Discuții
+    edit: Editare
+    email: Adresă de e-mail
+    load_more: Mai Multe
+    log_in: Conecare
+    log_out: Deconectare
+    mark_all_as_read: Marcare toate ca citite
+    next_page: Pagina următoare
+    notifications: Notificări
+    okay: Validare                               # Referenced by flarum-flags.yml, flarum-suspend.yml, flarum-tags.yml
+    password: Parolă
+    reply: Răspunde                              # Referenced by flarum-mentions.yml
+    restore: Restaurare
+    settings: Setări
+    sign_up: Înregistrare
+    start_a_discussion: Discuție Nouă
+    some_others: "{count} altul|{count} altele"  # Referenced by flarum-likes.yml, flarum-mentions.yml
+    username: Nume de utilizator
+    write_a_reply: Scrieți un răspuns…
+    you: D-voastră                               # Referenced by flarum-likes.yml, flarum-mentions.yml
+
+  ##
+  # GROUP NAMES - These keys are translated at the back end.
+  ##
+
+  # Translations in this namespace are used to translate default group names.
+  group:
+    admin: Administrator
+    admins: Administratori
+    guest: Invitat
+    guests: Invitați
+    member: Membru
+    members: Membri
+    mod: Moderator
+    mods: Moderatori

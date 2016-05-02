@@ -1,0 +1,79 @@
+# Custom French Laravel's Validation Rules Locales
+# Based on: https://github.com/caouecs/Laravel-lang/blob/master/src/fr/validation.php
+
+validation:
+  accepted: "Câmpul pentru :attribute trebuie să fie acceptat."
+  active_url: "Câmpul pentru :attribute nu este o adresă URL validă."
+  after: "Câmpul pentru :attribute trebuie să fie o dată după :date."
+  alpha: "Câmpul pentru :attribute poate conține doar litere."
+  alpha_dash: "Câmpul pentru :attribute poate conține doar litere, cifre și liniuțe."
+  alpha_num: "Câmpul pentru :attribute poate conține doar litere și cifre."
+  array: "Câmpul pentru :attribute trebuie să fie o listă (array)."
+  before: "Câmpul pentru :attribute trebuie să fie o dată înainte de :date."
+  between:
+    numeric: "Câmpul pentru :attribute trebuie să fie cuprins între :min și :max."
+    file: ":attribute trebuie să fie cuprins între :min și :max KB."
+    string: "Câmpul pentru :attribute trebuie să cuprindă între :min et :max caractere."
+    array: "Câmpul pentru :attribute trebuie să cuprindă între :min et :max elemente."
+  boolean: "Câmpul pentru :attribute trebuie să fie adevărat sau fals."
+  confirmed: "Câmpul de confirmare pentru :attribute nu corespunde."
+  date: "Câmpul pentru :attribute nu este o dată validă."
+  date_format: "Câmpul pentru :attribute nu corespunde formatului :other."
+  different: "Câmpul pentru :attribute și pentru :other trebuie să fie diferite."
+  digits: "Câmpul pentru :attribute trebuie să conțină :digits cifre."
+  digits_between: "Câmpul pentru :attribute trebuie să fie cuprins între :min și :max cifre."
+  distinct: "Câmpul pentru :attribute are o valoare duplicată."
+  email: "Câmpul pentru :attribute trebuie să fie o adresă de e-mail validă."
+  exists: "Valoarea selectată pentru câmpul :attribute este invalidă."
+  filled: "Câmpul pentru :attribute este obligatoriu."
+  image: "Câmpul pentru :attribute trebuie să fie o imagine."
+  in: "Câmpul :attribute este invalid."
+  in_array: "Câmpul :attribute nu există în :other."
+  integer: "Câmpul pentru :attribute trebuie să fie un număr întreg."
+  ip: "Câmpul pentru :attribute trebuie să fie o adresă IP validă."
+  json: "Câmpul pentru :attribute trebuie să fie un șir JSON valid."
+  max:
+    numeric: "Câmpul pentru :attribute nu poate fi mai mare decât :max."
+    file: ":attribute nu poate depăși :max KB."
+    string: "Câmpul pentru :attribute nu poate conține mai mult de :max caractere."
+    array: "Câmpul pentru :attribute nu poate conține mai mult de :max elemente."
+  mimes: "Câmpul pentru :attribute trebuie să fie un fișier de tip : :values."
+  min:
+    numeric: "Câmpul pentru :attribute trebuie să depășească valoarea :min."
+    file: ":attribute trebuie sa aibă cel puțin :min KB."
+    string: "Câmpul pentru :attribute trebuie să conțină cel puțin :min caractere."
+    array: "Câmpul pentru :attribute trebuie să conțină cel puțin :min elemente."
+  not_in: "Câmpul :attribute selectat este invalid."
+  numeric: "Câmpul pentru :attribute trebuie să fie un număr."
+  present: "Câmpul pentru :attribute trebuie să fie prezent."
+  regex: "Formatul folosit pentru :attribute este invalid."
+  required: "Câmpul pentru :attribute este obligatoriu."
+  required_if: "Câmpul pentru :attribute este obligatoriu atunci când :other este :value."
+  required_unless: "Câmpul pentru :attribute este obligatoriu cu excepția când :other este :values."
+  required_with: "Câmpul pentru :attribute este obligatoriu când :values este prezent."
+  required_with_all: "Câmpul pentru :attribute este obligatoriu când le :values este prezent."
+  required_without: "Câmpul pentru :attribute este obligatoriu când :values nu este prezent."
+  required_without_all: "Câmpul pentru :attribute este obligatoriu când niciuna din :values nu sunt prezente."
+  same: "Câmpul pentru :attribute și cel pentru :other trebuie să fie identice."
+  size:
+    numeric: "Câmpul pentru :attribute trebuie să aibă mărimea :size."
+    file: "Câmpul pentru :attribute trebuie să aibă mărimea de :size KB."
+    string: "Câmpul pentru :attribute trebuie să conțină :size caractere."
+    array: "Câmpul pentru :attribute trebuie să conțină :size elemente."
+  string: "Câmpul pentru :attribute trebuie să fie un șir de caractere."
+  timezone: "Câmpul pentru :attribute trebuie să fie un fus orar valid."
+  unique: "Valoarea pentru :attribute a fost deja folosită."
+  url: "Formatul pentru :attribute este invalid."
+
+  attributes:
+    username: numele de utilizator
+    password: parolă
+    email: adresă de e-mail
+    title: titlu
+    content: conținut
+    name_singular: numele la singular
+    name_plural: numele la plural
+
+  custom:
+    username:
+      regex: "Numele de utilizator poate conține doar litere, cifre și liniuțe."

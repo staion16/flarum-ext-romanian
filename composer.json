@@ -1,0 +1,41 @@
+{
+    "name": "bmain/flarum-ext-romanian",
+    "type": "flarum-extension",
+    "description": "Romanian language pack for Flarum.",
+    "homepage": "https://github.com/bmalex88/flarum-ext-romanian",
+    "keywords": ["locale"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Buhnici Mihai Alexandru",
+            "email": "admin@bmain.ro",
+            "homepage": "https://www.bmain.ro"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/bmalex88/flarum-ext-romanian/issues",
+        "source": "https://github.com/bmalex88/flarum-ext-romanian",
+        "forum": "https://www.bmain.ro"
+    },
+    "require": {
+        "flarum/core": "^0.1.0-beta.5"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        },
+        "flarum-extension": {
+            "title": "Romanian",
+            "icon": {
+                "image": "icon.svg",
+                "backgroundColor": "#CB0002",
+                "backgroundSize": "cover",
+                "backgroundPosition": "center"
+            }
+        },
+        "flarum-locale": {
+            "code": "ro",
+            "title": "Romanian"
+        }
+    }
+}

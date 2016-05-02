@@ -1,0 +1,61 @@
+flarum-flags:
+
+  ##
+  # UNIQUE KEYS - The following keys are used in only one location each.
+  ##
+
+  # Translations in this namespace are used by the admin interface.
+  admin:
+
+    # These translations are used in the Permissions page of the admin interface.
+    permissions:
+      flag_posts_label: Raportare postări
+      view_flags_label: Vedeți mesaje raportate
+
+    # These translations are used in the Flags Settings modal dialog.
+    settings:
+      guidelines_url_label: URL la regulile comunității
+      title: Opțiuni raportare
+
+  # Translations in this namespace are used by the forum user interface.
+  forum:
+
+    # These translations are used by the Flag Post modal dialog.
+    flag_post:
+      confirmation_message: Vă mulțumim că ați raportat această postare. Moderatorii se vor ocupa de asta în cel mai scurt timp.
+      dismiss_button: => core.ref.okay
+      reason_inappropriate_label: inapproprié
+      reason_inappropriate_text: "Acest mesaj este ofensiv, vulgar sau nu respectă <a>regulile counității</a>."
+      reason_off_topic_label: "Pe lângă subiect"
+      reason_off_topic_text: Acest mesaj nu este relevant în această discuție și ar trebui mutat altundeva.
+      reason_other_label: Altul
+      reason_spam_label: Spam
+      reason_spam_text: Acest mesaj este un anunț publicitar.
+      submit_button: => flarum-flags.ref.flag_post
+      title: => flarum-flags.ref.flag_post
+
+    # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
+    flagged_posts:
+      empty_text: Nicio raportare
+      item_text: "{username} în <em>{discussion}</em>"
+      title: => flarum-flags.ref.flagged_posts
+      tooltip: => flarum-flags.ref.flagged_posts
+
+    # These translations are used by the frame displayed around flagged posts.
+    post:
+      dismiss_flag_tooltip: Anulați raportarea
+      flagged_by_text: "{username} raportat"
+      flagged_by_with_reason_text: "{username} raportat pentru că {reason}"
+
+    # These translations are used by the post control buttons.
+    post_controls:
+      flag_button: Raportare
+
+  ##
+  # REUSED KEYS - The following keys are used in several locations and should not be used directly in code.
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    flag_post: Raportați postarea
+    flagged_posts: Mesaje raportate
