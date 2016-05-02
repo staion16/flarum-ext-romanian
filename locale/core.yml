@@ -23,25 +23,25 @@ core:
       dark_mode_label: Mod întunecat
       edit_css_button: Editare stiluri personalizate
       enter_hex_message: "Vă rugăm, introduceți un cod hexadecimal de culoare."
-      submit_button: => core.ref.save_changes
+      submit_button: => Salvați modificările
 
     # These translations are used in the Basics page.
     basics:
       all_discussions_label: => core.ref.all_discussions
       default_language_heading: Limbă implicită
       forum_description_heading: Descrierea forumului
-      forum_description_text: Introduceți o frază sau două care să descrie comunitatea d-voastră. Acestea vor apărea într-o meta-etichetă și se vor afișa în motoarele de căutare.
+      forum_description_text: Introduceți o frază sau două care să descrie comunitatea d-voastră. Acestea vor apărea în motoarele de căutare.
       forum_title_heading: Títlul forumului
       home_page_heading: Pagină de start
       home_page_text: "Alegeți care este prima pagină pe care utilizatorii o vor privi când vor intra pe forum." #TODO: Custom
       saved_message: Schimbările au fost salvate.
       submit_button: => core.ref.save_changes
       welcome_banner_heading: Mesaj de bun-venit
-      welcome_banner_text: Introduceți textul care va apărea în lista de discuții. Utilizați-l pentru a ura bun venit invitaților acestui forum.
+      welcome_banner_text: Introduceți textul care va apărea deasupra listei de discuții. Utilizați-l pentru a ura bun venit invitaților acestui forum.
 
     # These translations are used in the Dashboard page.
     dashboard:
-      beta_warning_text: "Acest <strong> software beta </ strong> este oferit în primul rând pentru a ne ajuta testându-ș și îmbunătățindu-l; nu ar trebui să fie utilizat în producție."
+      beta_warning_text: "Acest <strong> software beta </strong> este oferit în primul rând pentru cei ce doresc să testeze și să-l îmbunătățească; încă nu se recomandă utilizarea în versiuni de producție."
       contributing_text: "Vreți să contribuiți la depistarea problemelor? Consultați <a>documentația pentru contribuitori</a> (în engleză)."
       extension_text: "Interesat în dezvoltarea de extensii ? Consultați <a>documentația extensiilor</a> (în engleză)."
       features_text: "Aveți vre-o idee pentru a îmbunătăți o caracteristică? Împărtășiți-o sub eticheta <a>« Features »</a> (în engleză)."
@@ -302,7 +302,7 @@ core:
       change_email_button: => core.ref.change_email
       change_password_button: => core.ref.change_password
       notifications_heading: => core.ref.notifications
-      notify_by_email_heading: core.ref.email
+      notify_by_email_heading: E-mail
       notify_by_web_heading: Web
       notify_discussion_renamed_label: Cineva redenumește o discuție inițiată de mine
       privacy_disclose_online_label: Permieți altora să vadă când sunt conectat
@@ -339,7 +339,7 @@ core:
       button: Controale
       delete_button: => core.ref.delete
       delete_confirmation: "Sigur vreți să ștergeți acest utilizator? Toate mesajele vor fi șterse de asemenea."
-      edit_button: => core.ref.edit
+      edit_button: => Editare Utilizator
 
     # These translations are used in the alert that is shown when a new user has not confirmed their email address.
     user_email_confirmation:
