@@ -16,7 +16,7 @@ flarum-sticky:
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
-      sticky_tooltip: Lipiți
+      sticky_tooltip: Notiță
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
