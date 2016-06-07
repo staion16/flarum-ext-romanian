@@ -16,14 +16,22 @@ flarum-sticky:
 
     # These translations are displayed as tooltips for discussion badges.
     badge:
-      sticky_tooltip: Notiță
+      sticky_tooltip: => flarum-sticky.ref.sticky
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      sticky_button: Lipiți
+      sticky_button: => flarum-sticky.ref.sticky
       unsticky_button: Dezlipiți
 
     # These translations are displayed between posts in the post stream.
     post_stream:
       discussion_stickied_text: "{username} a lipit această discuție."
       discussion_unstickied_text: "{username} a dezlipit această discuție."
+
+  ##
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
+  ##
+
+  # Translations in this namespace are referenced by two or more unique keys.
+  ref:
+    sticky: Notiță

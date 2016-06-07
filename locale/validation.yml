@@ -1,6 +1,3 @@
-# Custom French Laravel's Validation Rules Locales
-# Based on: https://github.com/caouecs/Laravel-lang/blob/master/src/fr/validation.php
-
 validation:
   accepted: "Câmpul pentru :attribute trebuie să fie acceptat."
   active_url: "Câmpul pentru :attribute nu este o adresă URL validă."
@@ -22,6 +19,7 @@ validation:
   different: "Câmpul pentru :attribute și pentru :other trebuie să fie diferite."
   digits: "Câmpul pentru :attribute trebuie să conțină :digits cifre."
   digits_between: "Câmpul pentru :attribute trebuie să fie cuprins între :min și :max cifre."
+  dimensions: "Câmpul :attribute are dimensiuni de imagine incorecte."
   distinct: "Câmpul pentru :attribute are o valoare duplicată."
   email: "Câmpul pentru :attribute trebuie să fie o adresă de e-mail validă."
   exists: "Valoarea selectată pentru câmpul :attribute este invalidă."
@@ -73,6 +71,8 @@ validation:
     content: conținut
     name_singular: numele la singular
     name_plural: numele la plural
+    tag_count_primary: numărul de etichete principale
+    tag_count_secondary: numărul de etichete secundare
 
   custom:
     username:
