@@ -9,9 +9,10 @@ core:
 
     # These translations are used in the placeholder Add Extension modal dialog.
     add_extension:
-      developer_text: "Dacă sunteți dezvolttor, puteți <a>să citiți documentația</a> și să incercați să creați propriile extensii."
+      developer_text: "Dacă sunteți dezvoltator, puteți <a>citi documentația</a> și incerca să creați propriile extensii."
       install_text: "Între timp, puteți găsi extensii pe <a>Flarum.org</a> și le puteți instala prin Composer."
       temporary_text: "Într-o zi, într-un viitor foarte îndepărtat, acest dialog vă va permite să adăugați o extensie forumului d-voastră cu ușurință. ¡Creăm plataforma chiar în acest moment!"
+      title: Adaugă Extensie
 
     # These translations are used in the Appearance page.
     appearance:
@@ -42,6 +43,7 @@ core:
       home_page_heading: Pagină de start
       home_page_text: "Alegeți care este prima pagină pe care utilizatorii o vor privi când vor intra pe forum." #TODO: Custom
       saved_message: Schimbările au fost salvate.
+      show_language_selector_label: Arătați selectarea limbii
       submit_button: => Salvați Modificări
       welcome_banner_heading: Mesaj de bun-venit
       welcome_banner_text: Introduceți textul care va apărea deasupra listei de discuții. Utilizați-l pentru a ura bun venit invitaților acestui forum.
@@ -75,13 +77,13 @@ core:
       singular_placeholder: Denumire la singular (de exemplu « Moderator »)
       submit_button: => core.ref.okay
       title: Creare grup
-    
+
     # These translations are used in the Edit Custom Header modal dialog.
     edit_header:
       customize_text: "Adaugă cod HTML care să fie afișat deasupra paginii, peste antet."
       submit_button: => core.ref.save_changes
       title: Editare Antet Personalizat
-      
+
     # These translations are used in the email page of the admin interface.
     email:
       account_heading: Cont SMTP
@@ -147,6 +149,7 @@ core:
       start_discussions_label: Înițierea unei discuții
       view_discussions_label: Vizualizarea discuțiilor
       view_post_ips_label: Vizualizarea adresei IP a postării
+      view_user_list_label: Vizualizare lista utilizatori
 
     # These translations are used in the dropdown menus on the Permissions page.
     permissions_controls:
@@ -161,8 +164,8 @@ core:
 
     # These translations are used in the Settings modal dialog.
     settings:
-      submit_button: => core.ref.okay
-      
+      submit_button: => core.ref.save_changes
+
     # These translations are used in image upload buttons.
     upload_image:
       remove_button: Șterge
@@ -174,10 +177,10 @@ core:
     # These translations are used in the Change Email modal dialog.
     change_email:
       confirmation_message: => core.ref.confirmation_email_sent
-      confirm_password_label: => core.ref.confirm_password
+      confirm_password_placeholder: => core.ref.confirm_password
       dismiss_button: => core.ref.okay
       incorrect_password_message: Parola introdusă este incorectă.
-      submit_button: => core.ref.okay
+      submit_button: => core.ref.save_changes
       title: => core.ref.change_email
 
     # These translations are used in the Change Password modal dialog.
@@ -224,7 +227,6 @@ core:
       delete_forever_button: => core.ref.delete_forever
       log_in_to_reply_button: Conectați-vă pentru a răspunde
       rename_button: Redenumire
-      rename_text: "Introduceți un nou titlu pentru această discuție:"
       reply_button: => core.ref.reply
       restore_button: => core.ref.restore
 
@@ -238,10 +240,16 @@ core:
 
     # These translations are used in the Edit User modal dialog (admin function).
     edit_user:
+      activate_button: Activare Utilizator
+      email_heading: => core.ref.email
       email_label: => core.ref.email
+      groups_heading: Grupuri
+      password_heading: => core.ref.password
       password_label: => core.ref.password
-      submit_button: => core.ref.okay
+      set_password_label: Set new password
+      submit_button: => core.ref.save_changes
       title: Editare Utilizator
+      username_heading: => core.ref.username
       username_label: => core.ref.username
 
     # These translations are used in the Forgot Password modal dialog.
@@ -286,6 +294,7 @@ core:
       forgot_password_link: "Parolă uitată?"
       invalid_login_message: Date de acces incorecte.
       password_placeholder: => core.ref.password
+      remember_me_label: Adu-ți aminte
       sign_up_text: "Nu aveți cont? <a>Înscriere</a>"
       submit_button: => core.ref.log_in
       title: => core.ref.log_in
@@ -326,6 +335,11 @@ core:
       load_more_button: => core.ref.load_more
       reply_placeholder: => core.ref.write_a_reply
       time_lapsed_text: "{period} mai târziu"
+
+    # These translations are used by the rename discussion modal.
+    rename_discussion:
+      title: Introduceți un nou titlu pentru această discuție
+      submit_button: => core.ref.rename
 
     # These translations are used by the search results dropdown list.
     search:
@@ -439,6 +453,10 @@ core:
       submit_button: Resetare parolă
       title: Reinitializați parola de access
 
+  # Translations in this namespace are used in messages output by the API.
+  api:
+    invalid_username_message: "Numele de utilizator poate conține doar litere, numere și liniuțe(_)."
+
   # Translations in this namespace are used in emails sent by the forum.
   email:
 
@@ -505,14 +523,15 @@ core:
     notifications: Notificări
     okay: Validare                               # Referenced by flarum-flags.yml, flarum-suspend.yml, flarum-tags.yml
     password: Parolă
+    rename: Redenumiți
     reply: Răspunde                              # Referenced by flarum-mentions.yml
     reset_your_password: Resetează Parola
     restore: Restaurare
     save_changes: Salvare modificări             # Referenced by flarum-tags.yml
     settings: Setări
     sign_up: Înregistrare
+    some_others: "{count} alt|{count} alți"
     start_a_discussion: Discuție Nouă
-    some_others: "{count} altul|{count} altele"  # Referenced by flarum-likes.yml, flarum-mentions.yml
     username: Nume de utilizator
     write_a_reply: Scrieți un răspuns…
     you: D-voastră                               # Referenced by flarum-likes.yml, flarum-mentions.yml
