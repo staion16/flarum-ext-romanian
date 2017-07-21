@@ -14,66 +14,66 @@ flarum-tags:
     # These translations are used in the Edit Tag modal dialog.
     edit_tag:
       color_label: Culoare
-      delete_tag_button: Ștergere etichetă
-      delete_tag_confirmation: "Sunteți sigur că vreți să ștergeți această etichetă? Discuțiile cărora i-au fost atribuită nu vor fi șterse."
+      delete_tag_button: Șterge Etichetă
+      delete_tag_confirmation: "Sigur vrei să ștergi această etichetă? Postările cu aceasta NU vor fi șterse."
       description_label: Descriere
-      hide_label: Ascundeți din toate discuțiile
+      hide_label: Ascunde din Toate Discuțiile
       name_label: => flarum-tags.ref.name
       name_placeholder: => flarum-tags.ref.name
-      slug_label: Identificator
-      submit_button: => core.ref.okay
+      slug_label: Scurtătură
+      submit_button: => core.ref.save_changes
       title: => flarum-tags.ref.create_tag
 
     # These translations are used in the navigation bar.
     nav:
       tags_button: => flarum-tags.ref.tags
-      tags_text: Administrați lista de eticheta disponibile pentru organizarea discuțiilor.
+      tags_text: Administrează lista de etichete disponibile cu care organizezi postările.
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      allow_edit_tags_label: Editarea etichetelor
-      restrict_by_tag_heading: Restricționare după etichetă
-      tag_discussions_label: Discuțiile etichetei
+      allow_edit_tags_label: Permite editarea etichetelor
+      restrict_by_tag_heading: Restricționează după Etichetă
+      tag_discussions_label: Postările etichetei
 
     # These translations are used in the Tag Settings modal dialog.
     tag_settings:
       range_separator_text: " la "
-      required_primary_heading: Numărul necesar de etichete principale
-      required_primary_text: Introduceți numărul minim și maxim de etichete principle care pot fi atribuite unei discuții.
-      required_secondary_heading: Numărul necesar de etichete secundare
-      required_secondary_text: Introduceți numărul minim și maxim de etichete secundare care pot fi atribuite unei discuții.
-      title: Opțiuni Etichete
+      required_primary_heading: Numărul Obligatoriu de Etichete Principale
+      required_primary_text: Introdu numărul minim și maxim de etichete principale care pot fi atașate unei postări.
+      required_secondary_heading: Numărul Obligatoriu de Etichete Secundare
+      required_secondary_text: Introdu numărul minim și maxim de etichete secundare care pot fi atașate unei postări.
+      title: Setări Etichete
 
     # These translations are used in the Tags page.
     tags:
-      about_tags_text: "Etichetele sunt folosite pentru a categoriza discuțiile. Etichetele principale sunt precum categoriile unui forum obișnuit, putând fi aranjate pe două niveluri. Etichetele secundare nu reprezintă categorii sau ordine și au rol de mini-categorii."
+      about_tags_text: "Etichetele sunt folosite pentru a categoriza postarile. Etichetele principale sunt precum categoriile: pot fi plasate într-o ierarhie de două niveluri. Etichetele secundare nu au ierarhie sau ordine și sunt folositoare pentru micro-categorizare."
       create_tag_button: => flarum-tags.ref.create_tag
-      primary_heading: Etichete principale
-      secondary_heading: Etichete secundare
-      settings_button: Opțiuni
+      primary_heading: Etichete Principală
+      secondary_heading: Etichete Secundare
+      settings_button: Setări
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used by the Choose Tags modal dialog.
     choose_tags:
-      choose_primary_placeholder: "Selectați o etichetă principlî|Selectați {count} etichete principale"
-      choose_secondary_placeholder: "Selectați o etichetă secundară|Selectați {count} etichete secundare"
-      edit_title: "Editați etichetele pentru {title}"
+      choose_primary_placeholder: "Alege o etichetă principală|Alege {count} etichete principale"
+      choose_secondary_placeholder: "Alege încă o etichetă|Alege încă {count} etichete"
+      edit_title: "Schimbă Etichete pentru {title}"
       submit_button: => core.ref.okay
-      title: Selectați etichete pentru discuție
+      title: Alege Etichete pentru Postarea Ta
 
     # These translations are used by the composer when starting a discussion.
     composer_discussion:
-      choose_tags_link: Selectați etichete
+      choose_tags_link: Choose Tags
 
     # These translations are used by the discussion control buttons.
     discussion_controls:
-      edit_tags_button: Editare etichete
+      edit_tags_button: Schimbare Etichete
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
-      more_link: Mai mult…
+      more_link: Mai mult...
       tags_link: => flarum-tags.ref.tags
       untagged_link: Neetichetat
 
@@ -82,7 +82,7 @@ flarum-tags:
       added_tags_text: "{username} a adăugat {tagsAdded}."
       added_and_removed_tags_text: "{username} a adăugat {tagsAdded} și a șters {tagsRemoved}."
       removed_tags_text: "{username} a șters {tagsRemoved}."
-      tags_text: "eticheta {tags}|etichetele {tags}"
+      tags_text: "{tags} eticheta|{tags} etichetele"
 
   # Translations in this namespace are used by the forum and admin interfaces.
   lib:
@@ -96,6 +96,6 @@ flarum-tags:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    create_tag: Creare Etichetă
+    create_tag: Crează Etichete
     name: Nume
     tags: Etichete

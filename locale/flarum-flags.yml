@@ -9,53 +9,53 @@ flarum-flags:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      flag_posts_label: Raportare postări
-      view_flags_label: Vedeți mesaje raportate
+      flag_posts_label: Raportează postări
+      view_flags_label: Vezi postări raportate
 
     # These translations are used in the Flags Settings modal dialog.
     settings:
-      guidelines_url_label: URL la regulile comunității
-      title: Opțiuni raportare
+      guidelines_url_label: URL Reguli Comunitate
+      title: Setări Raportări
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used by the Flag Post modal dialog.
     flag_post:
-      confirmation_message: Vă mulțumim că ați raportat această postare. Moderatorii se vor ocupa de asta în cel mai scurt timp.
+      confirmation_message: Mulțumim că ai raportat această postare. Moderatorii se vor ocupa de aceasta.
       dismiss_button: => core.ref.okay
-      reason_inappropriate_label: inapproprié
-      reason_inappropriate_text: "Acest mesaj este ofensiv, vulgar sau nu respectă <a>regulile counității</a>."
+      reason_inappropriate_label: Nepotrivită
+      reason_inappropriate_text: "Această postare este jignitoare, abuzivă, sau încalcă <a>regulile comunității</a>."
       reason_off_topic_label: "Pe lângă subiect"
-      reason_off_topic_text: Acest mesaj nu este relevant în această discuție și ar trebui mutat altundeva.
-      reason_other_label: Altul
+      reason_off_topic_text: Această postare nu are legătură cu acest subiect și ar trebui mutată în altă parte.
+      reason_other_label: Altele
       reason_spam_label: Spam
-      reason_spam_text: Acest mesaj este un anunț publicitar.
+      reason_spam_text: Această postare este un anunț publicitar.
       submit_button: => flarum-flags.ref.flag_post
       title: => flarum-flags.ref.flag_post
 
     # These translations are used by the Flagged Posts dropdown, a.k.a. "the flag".
     flagged_posts:
-      empty_text: Nicio raportare
+      empty_text: Fără Raportări
       item_text: "{username} în <em>{discussion}</em>"
       title: => flarum-flags.ref.flagged_posts
       tooltip: => flarum-flags.ref.flagged_posts
 
     # These translations are used by the frame displayed around flagged posts.
     post:
-      dismiss_flag_tooltip: Anulați raportarea
-      flagged_by_text: "{username} raportat"
-      flagged_by_with_reason_text: "{username} raportat pentru că {reason}"
+      dismiss_flag_button: Anulează Raportarea
+      flagged_by_text: "Raportat de către {username}"
+      flagged_by_with_reason_text: "Raportat de către {username} pentru că {reason}"
 
     # These translations are used by the post control buttons.
     post_controls:
       flag_button: Raportare
 
   ##
-  # REUSED KEYS - The following keys are used in several locations and should not be used directly in code.
+  # REUSED TRANSLATIONS - These keys should not be used directly in code!
   ##
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    flag_post: Raportați postarea
-    flagged_posts: Raportări
+    flag_post: Raportează Postarea
+    flagged_posts: Postări Raportate

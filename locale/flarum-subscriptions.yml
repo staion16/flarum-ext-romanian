@@ -15,33 +15,33 @@ flarum-subscriptions:
     # These translations are used by the discussion control buttons.
     discussion_controls:
       follow_button: => flarum-subscriptions.ref.follow
-      unfollow_button: Dezabonare
-      unignore_button: Nu mai ignorați
+      unfollow_button: Nu mai urmări
+      unignore_button: Nu mai ignora
 
     # These translations are used on the index page, peripheral to the discussion list.
     index:
-      following_link: Abonări
+      following_link: => flarum-subscriptions.ref.following
 
     # These translations are used by the Notifications dropdown, a.k.a. "the bell".
     notifications:
-      new_post_text: "{username} a postat ceva"
+      new_post_text: "{username} a postat"
 
     # These translations are used in the Settings page.
     settings:
-      forum_follow_after_reply_label: Urmăriți discuțiile create de mine în mod automat
-      notify_new_post_label: Cineva răspunde într-o discuție la care sunt abonat
+      follow_after_reply_label: Urmărește postările la care particip automat
+      notify_new_post_label: Cineva postează într-o discuție urmărită de mine
 
     # These translations are used in the subscription menu displayed to the right of the post stream.
     sub_controls:
       follow_button: => flarum-subscriptions.ref.follow
       following_button: => flarum-subscriptions.ref.following
-      following_text: Notificați-mi oridecâteori se răspunde.
+      following_text: Fii notificat de toate răspunsurile.
       ignoring_button: => flarum-subscriptions.ref.ignoring
-      ignoring_text: Nu mi se notifică niciodată. Ascundeți din lista de discuții.
-      not_following_button: Neabonat
-      not_following_text: "Notificați-mi doar când sunt @menționat."
-      notify_alert_tooltip: Primiți o notificare atunci când apar postări noi
-      notify_email_tooltip: Primiți un e-mail atunci când apar postări noi
+      ignoring_text: Nu fi notificat niciodată. Ascunde din lista de discuții.
+      not_following_button: Nu Urmărești
+      not_following_text: "Fii notificat doar când ești @menționat."
+      notify_alert_tooltip: Primește o notificare când apar noi postări
+      notify_email_tooltip: Primește un e-mail când apar noi postări
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!
@@ -49,6 +49,6 @@ flarum-subscriptions:
 
   # Translations in this namespace are referenced by two or more unique keys.
   ref:
-    follow: Abonare
-    following: Abonat
-    ignoring: Ignorare
+    follow: Urmărește
+    following: Urmărit de Tine
+    ignoring: Ignori

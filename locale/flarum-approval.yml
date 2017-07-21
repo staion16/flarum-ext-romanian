@@ -9,9 +9,9 @@ flarum-approval:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      approve_posts_label: Aprobare mesage
-      reply_without_approval_label: Răspuns fără aprobare
-      start_discussions_without_approval_label: Deschide discuție fără aprobare
+      approve_posts_label: Aprobă postări
+      reply_without_approval_label: Răspunde la postări fără aprobare
+      start_discussions_without_approval_label: Inițiază posări fără aprobare
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -22,11 +22,11 @@ flarum-approval:
 
     # These translations are displayed in the post header.
     post:
-      awaiting_approval_text: Se așteaptă aprobarea
+      awaiting_approval_text: => flarum-approval.ref.awaiting_approval
 
     # These translations are used by the post control buttons.
     post_controls:
-      approve_button: Aprobare
+      approve_button: Aprobă
 
   ##
   # REUSED TRANSLATIONS - These keys should not be used directly in code!

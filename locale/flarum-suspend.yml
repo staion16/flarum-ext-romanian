@@ -9,20 +9,20 @@ flarum-suspend:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      suspend_users_label: Suspendați utilizatori
+      suspend_users_label: Suspendă utilizatori
 
   # Translations in this namespace are used by the forum user interface.
   forum:
 
     # These translations are used in the Suspend User modal dialog (admin function).
     suspend_user:
-      indefinitely_label: Suspendare pe o perioadă nedefinită
-      limited_time_label: Suspendare temporară…
-      limited_time_days_text: " zi(le)"
+      indefinitely_label: Suspendat pe durată nelimitată
+      limited_time_label: Suspendat pe durată limitată...
+      limited_time_days_text: " zile"
       not_suspended_label: Nesuspendat
-      status_heading: Starea Suspendării
-      submit_button: => core.ref.okay
-      title: "Suspendare {username}"
+      status_heading: Stare Suspendare
+      submit_button: => core.ref.save_changes
+      title: "Suspendează {username}"
 
     # These translations are displayed as tooltips for user badges.
     user_badge:

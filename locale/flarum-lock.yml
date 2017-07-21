@@ -9,7 +9,7 @@ flarum-lock:
 
     # These translations are used in the Permissions page of the admin interface.
     permissions:
-      lock_discussions_label: Blocare discuții
+      lock_discussions_label: Blocheaza Discuții
 
   # Translations in this namespace are used by the forum user interface.
   forum:
@@ -29,9 +29,9 @@ flarum-lock:
 
     # These translations are displayed between posts in the post stream.
     post_stream:
-      discussion_locked_text: "{username} a blocat discuția."
-      discussion_unlocked_text: "{username} a deblocat discuția."
+      discussion_locked_text: "{username} a blocat această postare."
+      discussion_unlocked_text: "{username} a deblocat această postare."
 
     # These translations are used in the Settings page.
     settings:
-      notify_discussion_locked_label: Cineva blochează o discuție inițiată de mine
+      notify_discussion_locked_label: Cineva blochează o postare inițiată de mine
